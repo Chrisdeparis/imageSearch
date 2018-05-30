@@ -6,3 +6,7 @@ body {
 .images {
     column-count: 3;
 }
+
+img{
+    width: 100%;
+}
