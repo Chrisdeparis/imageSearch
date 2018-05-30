@@ -16,15 +16,16 @@ function formSubmitted(event){
     console.log(searchTerm);
 
     search(searchTerm)
-        .then(displayImages)
-        
-        
+        .then(displayImages)    
+       
 }
 
 function search(searchTerm){
     const url = `${API_URL}&query=${searchTerm}`;
     
     loadingImage.style.display = '';
+    imageSection.innerHTML = '';
+    
     return fetch(url)
         .then(response => response.json())
         .then(result => {
