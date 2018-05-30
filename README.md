@@ -1,1 +1,3 @@
 # imageSearch
+
+in Vanilla JS
